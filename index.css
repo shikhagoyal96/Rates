@@ -1,0 +1,115 @@
+.pageHeader {
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+.pageHeader .part1, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pageHeader .part1 .hamburger {
+    padding-top: 6px;
+    opacity: 1;
+}
+
+.pageHeader .part1 .hamburger:hover {
+    background-color: #a9a9a9;
+}
+
+.pageHeader .part1 .hamburger span{
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 26px;
+    margin-bottom: 3px;
+}
+
+.pageHeader .part2 {
+    margin-left: -18px;
+    margin-top: -2.1rem;
+}
+
+.pageHeader .part2 .menu-items {
+    display: none;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin-top: -28px;
+    background: white;
+    width: fit-content;
+    box-shadow: 2px 2px #aaaaaa;
+}
+
+.pageHeader .part2 .menu-items li {
+    list-style: none;
+    font-size: 22px;
+    margin-bottom: 26px;
+    margin-left: 16px;
+}
+
+.pageHeader .part2 .item:hover {
+    background-color: #a9a9a9;
+}
+
+.pageHeader div .title, .login {
+    font-size: 22px;
+    margin: auto;
+}
+
+.mainContainer {
+    padding-top: 3rem;
+}
+
+.mainContainer img {
+    width: -webkit-fill-available;
+    height: 50rem;
+}
+
+footer .part1, footer .part2, footer .part3 {
+    width: 33.33%;
+    margin: 0 10px;
+}
+
+footer .footerTitle {
+    font-size: 20px;
+}
+
+footer .blogContainer * {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+footer .part3 .insuranceTypes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .part3 .insuranceTypes span {
+    margin: 0 4px 12px;
+    padding: 0 10px;
+    background-color: #a9a9a9;
+    height: fit-content;
+    color: white;
+}
+
+footer .part3 .insuranceTypes span:hover {
+    background-color: black;
+}
+
+@media only screen and (max-width: 855px) {
+    footer {
+        display: block;
+    }
+    footer .part1, footer .part2, footer .part3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer{
+        display: block;
+    }
+}
